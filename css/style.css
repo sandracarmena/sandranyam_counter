@@ -1,0 +1,146 @@
+h1{
+  font-size: 70px;
+  color: rgb(85, 204, 77);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+section {
+  width: 830px;
+  height: 550px;
+  background-image: radial-gradient(circle at 100% 0%, rgb(184, 231, 100) 0px, rgb(163, 224, 95) 16.67%, rgb(137, 215, 88) 33.33%, rgb(106, 204, 80) 50%, rgb(69, 193, 73) 66.67%, rgb(0, 183, 71) 83.33%, rgb(0, 176, 72) 100%);
+  margin: auto;
+  border-radius: 12px;
+}
+
+divCounter{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+p {
+    font-size: 90px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+}
+
+divCalculator{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.button {
+  appearance: none;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-height: 60px;
+  min-width: 0px;
+  text-align: center;
+  user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(236, 245, 238);
+  border-image: initial;
+  border-radius: 15px;
+  outline: none;
+  padding: 26px 45px;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
+}
+
+.button:disabled {
+  pointer-events: none;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+divbutton2 {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.button2{
+  margin-left: 25px;
+    margin-right: 25px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+    width: 300px;
+    height: 100px;
+    appearance: none;
+    background-color: rgb(236, 245, 238);
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(236, 245, 238);
+    border-image: initial;
+    border-radius: 15px;
+  }
+  .button2:disabled {
+    pointer-events: none;
+  }
+  
+  .button2:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button2:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  divText {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    background-color: rgb(236, 245, 238);
+    margin-left: 92px;
+    margin-right: 92px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  
+
+text {
+  font-size: 30px;
+  text-align: center;
+  margin: 0px;
+}
