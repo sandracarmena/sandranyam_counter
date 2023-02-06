@@ -17,18 +17,22 @@ section.appendChild(divCalculator);
 let buttonPlus = document.createElement("button");
 buttonPlus.innerHTML = "+";
 buttonPlus.className = "button";
+buttonPlus.id = "buttonPlus";
 
 let buttonMoins = document.createElement("button");
 buttonMoins.innerHTML = "-";
 buttonMoins.className = "button";
+buttonMoins.id = "buttonMoins";
 
 let PlusDix = document.createElement("button");
 PlusDix.innerHTML = "+10";
 PlusDix.className = "button";
+PlusDix.id = "PlusDix";
 
 let MoinsDix = document.createElement("button");
 MoinsDix.innerHTML = "-10";
 MoinsDix.className = "button";
+MoinsDix.id = "MoinsDix";
 
 divCalculator.appendChild(buttonPlus);
 divCalculator.appendChild(buttonMoins);
@@ -66,6 +70,7 @@ document.body.appendChild(section);
 let count = 0;
 let result = 1;
 let gamesPlayed = 0;
+let clicked = false;
 
 function calc1() {
   p.innerHTML = parseInt(p.innerHTML) + 1;
@@ -88,11 +93,13 @@ function calc4() {
   count = count - 10;
   paragraph.innerHTML = `You clicked ${result++} times`;
 }
+
 function calc5() {
-  if (count !== 0) {
-    gamesPlayed += 1;
-    buttonGames.innerHTML = `N° Games: ${gamesPlayed}`;
+  if (clicked) {
+    gamesPlayed++;
   }
+  clicked = false;
+  buttonGames.innerHTML = `N° Games: ${gamesPlayed}`;
   p.innerHTML = 0;
   result = 1;
   count = 0;
@@ -102,16 +109,20 @@ function calc5() {
 /*adding event on ours buttons*/
 
 buttonPlus.addEventListener("click", () => {
+  clicked = true;
   calc1();
 });
 buttonMoins.addEventListener("click", () => {
+  clicked = true;
   calc2();
 });
 PlusDix.addEventListener("click", () => {
+  clicked = true;
   calc3();
 });
 
 MoinsDix.addEventListener("click", () => {
+  clicked = true;
   calc4();
 });
 
